@@ -5,31 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sukhdit Saini's Projects</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body{
-            background-image: linear-gradient(to bottom, #15e8f0, #aefaff);
+            background: linear-gradient(to right,  #47edf3, #cbfffc, #ffb8d6, #f775ab);
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         a{
             text-decoration: none;
             color: blue;
         }
+        table, th, td{
+            border: 2px solid black;
+        }
+        
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="AboutMe.html">About Me</a></li>
-                <li><a href="ContactMe.html">Contact</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: center; display: flex;">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="AboutMe.html">About Me</a>                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ContactMe.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Blog.html">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            
+          </nav>
     </header>
-    <main>
+    <main style="margin-bottom: 52px;">
         <section class="projects">  
             <h1 style="text-align: center;">Projects</h1>
-            <p style="font-family: 'Times New Roman', Times, serif;">I am exited to share some of my previous projects, that I have been a part off and completed during my University journey.</p> 
+            <p >I am exited to share some of my previous projects, that I have been a part of and completed during my University journey.</p> 
             <ul >
                 <li style="list-style-type: circle;"><a href="#boggle" > Boggle</a></li>
                 <li style="list-style-type: circle;"><a href="#tetris"> Tetris</a></li>
@@ -39,40 +56,43 @@
             
             <div class="project">
                 <h2 id = "boggle">Boggle</h2>
-                <p> The Boggle project was created in a group of 4. This project was assigned to me and my team for completion of a programming course. This game is developed intellij
-                    using Javafx.  </br></br>Boggle is a 5x5 word-finding game for two or more players. In which you will be given random set of alphabets, you will then need to find as many words as possible.
+                <p> The Boggle project was created in a group of 4. This project was assigned to my team for completion of a programming course. This game is developed intellij
+                    using Javafx.  </br></br>Boggle is a 5x5 word-finding game for two or more players. In this game, you will be given random set of alphabets, you will then need 
+                    to find as many English words as possible.
                     The rules are:
                     <ul>
                         <li>
                             You may only connect alphabets horizontally, vertically or diagonally next to the selected alphabet. 
                         </li>
                         <li>
-                            You may only find words that are valid to a dictonary. 
+                            You may only find words that are valid to a English dictonary. 
                         </li>
                     </ul>
                 </p>
                 <img src="assets/boogleGame.jpg" alt="boggle">
-                <table border="4" colspan="2" rowspan="3">
+                <p></p>
+                <table>
                     <tr><th>Boggle Documents. </th> <th> Links</th> </tr>
                     <tr><td>Boggle Project Phase. </td> <td> <a href="assets/Proposal_Phase_2_from_Object_Disoriented.pdf"> Click Here for Information </a> </td> </tr>
                     <tr><td>Boggle Project Report. </td> <td> <a href="assets/project_report_template_Phase_2.pdf"> Click Here for Information </a> </td> </tr>
                     <tr><td>Boggle Game Presentation</td> <td> <a href="https://www.youtube.com/watch?v=D8u3SwXeAKQ"> Click Here for Information </a> </td> </tr>		
                 </table>
-                <p style="font-style: italic; color: red;"> Note: The code for this project and the repository may not me shared. This is beacuse the instructor did not permit to make the repository
-                    public or share the code publically. </p>
+                <p></p>
+                <p style="font-style: italic; color: red;"> Note: The code for this project and the repository may not me shared. This is because the instructor did not permit to make the repository
+                    public or share the code publicly. </p>
             </div>
             <div class="project">                
                 <h2 id = "tetris">Tetris</h2>
-                <p> My Tetris game has many functions. Firstly, there are player options. Specifically, you can allow a computer to play the game, or you can play the game yourself.
-                    Secondly, at the very bottom of the tetris GUI, there is a speed bar. This speed bar adjusts the speed of which the block will fall. You may adjust the speed
+                <p> My Tetris game has many functions. Firstly, there are options selection for players. Specifically, you can allow a computer to play the game, or you can play the 
+                    game yourself. Secondly, at the very bottom of the tetris GUI, there is a speed bar. This speed bar adjusts the speed of which the block will fall. You may adjust the speed
                     in the range of 0 to 100, where 0 means the blocks are not falling and 100 meaning the blocks will fall at tis maximum speed. Additionally, there is an option to 
                     stop or start the game. These buttons are created with the purpose to stop the game and take a break. Finally, there are 3 buttons "Save", "Load" and "New Game".
-                    These buttons allow the player to save the game at its current state, and reload the save game whenever the player wants to play. Furthermore, the player may click
+                    These buttons allow the player to save the game at its current state, and reload the saved game whenever the player wants to play. Furthermore, the player may click
                     the "New Game" button if they would like to play in a fresh board.
                 </br>
                 </br> <img src="assets/tetris.JPG" alt="Tetris">
-                <p style="font-style: italic; color: red;"> Note: The code for this project and the repository may not me shared. This is beacuse the instructor did not permit to make the repository
-                    public or share the code publically. </p>
+                <p style="font-style: italic; color: red;"> Note: The code for this project and the repository may not me shared. This is because the instructor did not permit to make the repository
+                    public or share the code publicly. </p>
             </div>
             <div class="project">                
                 <h2 id = "calculator">Calculator</h2>
@@ -80,21 +100,21 @@
                     multiplication, and division.
                 </br>
                 </br> <img src="assets/calculator.jpg" alt="Calculator" style="width: 100%;">
-                <p style="font-style: italic; color: red;"> Note: The code for this project and the repository may not me shared. This is beacuse the instructor did not permit to make the repository
-                    public or share the code publically. </p>
+                <p style="font-style: italic; color: red;"> Note: The code for this project and the repository may not me shared. This is because the instructor did not permit to make the repository
+                    public or share the code publicly. </p>
             </div>
             <div class="project">                
                 <h2 id = "vacation">My Get Away Page</h2>
                 <p>My get away page is my very first designed html page, where I discuss the location I like to visit during the weekends to relax my mind and take a break from my day to day life. 
-                    This webpage was created to fulfill my assignment in a course. 
+                    This webpage was created to fulfill my assignment in one of the course. 
                 </br>
                 </br> You can visit my weekend get away page <a href = "assets/sukhdit_saini.html">here</a> </p>
             </div>
-            <!-- Add more projects as needed -->
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <footer style="font-family: sans-serif;">
+        <p style="text-align: center; margin: 5px;">&copy; 2024 Sukhdit Saini. All rights reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

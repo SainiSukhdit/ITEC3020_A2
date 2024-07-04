@@ -6,33 +6,28 @@ body {
 }
 
 .navbar {
-    background-image: linear-gradient(to left, #28a7b8, #08fcef);
+    background-image: linear-gradient(to left,  #47edf3, #cbfffc, #ffb8d6, #f775ab);
 }
 .navbar-nav{
     justify-items: center;
 }
 
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+a:hover{
+    background-color: white;
+}
 header {
     background-color: #333;
     color: #fff;
     padding: 1px 0;
 }
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+h1 {
+    text-align: center;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
 
 footer {
     background-color: #333;
@@ -48,7 +43,7 @@ main {
     padding: 20px;
 }
 
-.intro, .biography, .projects, .contact {
+.intro, .biography, .projects {
     background-color: white;
     padding: 20px;
     margin: 20px auto;
@@ -70,10 +65,11 @@ main {
     flex-direction: column;
 }
 
+/*
 .contact form label {
     margin: 10px 0 5px;
 }
-
+*/
 .contact form input, .contact form textarea {
     padding: 10px;
     margin-bottom: 10px;
@@ -93,36 +89,104 @@ main {
 .contact form button:hover {
     background-color: #555;
 }
-
+*/
 .social-media a {
     margin: 0 10px;
     display: inline-block;
 }
 
-/* Basic reset for margin and padding 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-*/
-/* Horizontal list styles */
 .horizontal-list {
-    list-style-type: none; /* Remove default list bullets */
-    display: flex; /* Use flexbox to align items horizontally */
-    padding: 10px; /* Add some padding for visual spacing */
-    background-color: #f4f4f4; /* Background color for the list */
-    border-radius: 5px; /* Rounded corners for the list */
+    list-style-type: none; 
+    display: flex; 
+    padding: 10px; 
+    background-color: #f4f4f4; 
+    border-radius: 5px; 
 }
 
 .horizontal-list li {
-    margin-right: 20px; /* Space between list items */
-    padding: 10px; /* Padding within each item */
-    background-color: #3498db; /* Background color for each item */
-    color: white; /* Text color */
-    border-radius: 5px; /* Rounded corners for each item */
+    margin-right: 20px; 
+    padding: 10px; 
+    background-color: #3498db; 
+    color: white; 
+    border-radius: 5px; 
 }
 
 .horizontal-list li:last-child {
-    margin-right: 0; /* Remove the margin from the last item */
+    margin-right: 0; 
+}
+.contact-container{
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    color: #08fcef;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color:#08fcef;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs{
+    width: 600px;
+    height: 50px;
+    border: 1rem;
+    outline: 1rem;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #000000;
+    border-radius: 50px;
+    font-size: large;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+
+}
+
+.contact-inputs:focus{
+    border:2px solid #cdf3f1;
+}
+
+.contact-inputs::placeholder{
+    color: rgb(121, 110, 110);
+    font-weight: 600;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color:#08fcef;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #47edf3, #cbfffc, #ffb8d6, #f775ab);
+    cursor:pointer;
+}
+.blogs {
+    font-size: xx-large;
+    font-family: cursive;
 }

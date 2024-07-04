@@ -4,27 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Your Name</title>
+    <title>Sukhdit Saini's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-        a:hover{
-            background-color: white;
+        button{
+          height: 75px;
+          width: 100%;
         }
-        
+        body{
+            background: linear-gradient(to right, #47edf3, #cbfffc, #ffb8d6, #f775ab);
+        }
+        p{
+          font-size: medium;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <!--<div class="container-fluid">
-          <a class="navbar-brand" href="#Contact"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          ******* THESE CAME ORIGINALLY WITH BOOTSTRAP CODE ALONG WITH THE ONE IN BOTTOM *********
-          -->
-          <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: center;">
-            <ul class="navbar-nav">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+          <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: center; display: flex;">
+            <ul class="navbar-nav" >
               <li class="nav-item">
                 <a class="nav-link" href="AboutMe.html">About Me</a>
               </li>
@@ -34,19 +34,71 @@
               <li class="nav-item">
                 <a class="nav-link" href="MyProjects.html">Projects</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.html">Blog</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-      <main>
+    </header>
+      <main style="margin-bottom: 42px;">
         <section class="intro">
             <h1>Welcome to My Website!</h1>
             <ul class="horizontal-list">
                 <li>
-                    <img src="C:\Users\sukhd\OneDrive\Pictures\photo id.jpg" alt="Your Picture" width="450"></li>
+                    <img src="assets/SukhditSaini.jpg" alt="Sukhdit Saini" width="600" style="height: 100%;"></li>
                 <li>
-                    <p style="font-size: larger;">Hello! I'm Sukhdit Saini, and I'm excited to share my journey and projects with you.</p></li>
+                    <p style="font-size:medium;">
+                      Hello! My name is Sukhdit Saini, and I am excited to share my journey and projects with you. I work towards enhancing my technical and skills. 
+                      I am eager to apply my knowledge to real-world projects and connect with fellow tech enthusiasts. I will be sharing more information about myself in this portfolio.
+                    </p></li>
             </ul>    
+            <ul class="horizontal-list">
+              
+              <li>
+                  <p style=" margin-top: 5px;" > Here, I will talk about myself, my skills and talk about my hobbies and interests. Additionally, in this page 
+                    I will provide you with my downloadable resume.
+                  </br> 
+                  </p>
+                  <p style="text-align: center;">
+                  </br><a href="AboutMe.html"><button style="background: linear-gradient(270deg, #47edf3, #cbfffc, #ffb8d6, #f775ab); font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';">
+                      About Me Page </button></a>
+                  </p>
+              </li>
+              <li>
+                <a href="AboutMe.html"><img src="assets/java.jpg" alt="Java" width="550px" style="height: 100%;"></a>
+              </li>
+          </ul>
+          <ul class="horizontal-list">
+            <li>
+              <a href="ContactMe.html"><img src="assets/gmail_square.jpg" alt="Contact" width="450" style="height: 100%;"></a>
+            </li>
+            <li>
+                <p style="margin-top: 5px;" > If you want to contact me, then please go to this page and fill in the form. 
+                  Please provide your name, email, subject of your topic, and a brief message. I will get back to you as soon as possible.  </br> 
+                </p>
+                <p style="text-align: center;">
+                </br><a href="ContactMe.html"><button style="background: linear-gradient(270deg, #47edf3, #cbfffc, #ffb8d6, #f775ab); font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';">
+                    Contact Page </button></a>
+                </p>
+            </li>
+        </ul>
+        <ul class="horizontal-list">          
+          <li>
+              <p style="margin-top: 5px;" > This page contains some of my projects that I have been a part of throughout my university journey. It consists of applications and games
+                I have created either individually or with an assigned team.
+              </br> 
+              </p>
+              <p style="text-align: center;">
+              <a href="MyProjects.html"><button style="background: linear-gradient(270deg, #47edf3, #cbfffc, #ffb8d6, #f775ab); font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';">
+                  Project Page </button></a>
+              </p>
+          </li>
+          <li>
+            <a href="MyProjects.html"><img src="assets/boogle.JPG" alt="Projects" width="600" style="height: 100%;"></a>
+          </li>
+      </ul>
         </section>
       </main>
       <footer>
@@ -54,8 +106,8 @@
       </footer>
   </body>
   </html>
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <footer style="font-family: sans-serif;">
+        <p style="text-align: center; margin: 5px;">&copy; 2024 Sukhdit Saini. All rights reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

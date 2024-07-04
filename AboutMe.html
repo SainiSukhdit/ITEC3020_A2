@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Sukhdit Saini</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body{
+            background: linear-gradient(to right,  #47edf3, #cbfffc, #ffb8d6, #f775ab);
+            font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: center; display: flex;">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ContactMe.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="MyProjects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Blog.html">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main style="margin-bottom: 55px;">       
+        <section class="biography">
+            
+            <h1>About Me</h1>
+            <img src = "assets/logoprogramming.jpg" alt="programming languages" style="height: 250px; width: 100%;">
+                <p> </br> As an Information Technology student at York University, during my academic phase I have developed skills in various programming languages and gained substaintial knowledge/expertise in the following fields: 
+                    <ul style = "font-family:Verdana, Geneva, Tahoma, sans-serif;">
+                        <i>
+                            <li> Programming Languages:
+                                <ul>
+                                    <li>
+                                        Python.
+                                    </li>
+                                    <li>
+                                        Java.
+                                    </li>
+                                    <li>
+                                        C++.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Web Designing.
+                            </li>
+                            <li>
+                                Matlab.
+                            </li>
+                            <li>
+                                SQL programming.
+                            </li>
+                            <li>
+                                Systems Application and Products (SAP). 
+                            </li>
+                        </i>
+                    </ul>
+                </p>
+            <h2>Interests</h2>
+                <p>I enjoy taking part in activities that either help me grow my knowledge or activites that I find interesting. I like reading various types of books (novels, educational books, scientific books) since I find these books to help me expand my knowledge. 
+                    Additionally, I love learning new programming languages. I find programming very interesting and I am very passionate about learning more about this field. 
+                    I Find drawing and painting very mentally therapeutic, and I would usually draw natural sceneries in my free time. I find video games very enjoyable, both developing and playing video games is a passion of mine. 
+                    Finally, I enjoy travelling around the world. I have been to a few places such as USA, England, India, China, Egypt, Argentina, and UAE. Moreover, I love various foreign cuisine too.</p>
+            
+            
+            <h2 style="margin: 0;margin-right: 10px;">Resume</h2> 
+            <p style="text-align: right; margin: 0;"><button style="background-color:#8bf1ec; font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';" onclick="downloadResume()">Download Resume</button></p>
+                        
+            <iframe src="assets/RESUME.pdf" width="100%" height="600px"></iframe>
+        </section>
+    </main>
+    <footer style="font-family: sans-serif;">
+        <p style="text-align: center; margin: 5px;">&copy; 2024 Sukhdit Saini. All rights reserved.</p>
+    </footer>
+    <script>
+            function downloadResume() {
+            const link = document.createElement('a');
+            link.href = 'assets/RESUME.pdf';
+            link.download = 'RESUME.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
