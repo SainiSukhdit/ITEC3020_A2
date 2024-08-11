@@ -5,19 +5,19 @@
         "images": [
             {
                 "src": "assets/LightMode.JPG",
-                "alt": "An example image 1"
+                "alt": "light mode blog"
             },
             {
                 "src": "assets/DarkMode.JPG",
-                "alt": "An example image 1"
+                "alt": "dark mode blog"
             }
         ],
         "para1": "I used a button on the Navigation bar across my web pages to easily toggle between light and dark theme. The light/dark mode is very useful to the users as it sets up their preferences for using the website. Many of us prefer using the dark over light mode since it is easier on our eyes. For implementing the dark mode, I used javascript and some css files. One css file is used for original/light mode and the other is used for the dark mode. Additionally, I used java scripting for automating the switcher. Switching between the two modes can be effectively executed by using just a single javascript file. Finally, Javascript is a very powerful tool to design and manipulate the html objects as per the creator's requirements.",
         "para2": "Below is a screenshot of how javascript looks like. The script uses a powerful and important built-in event function called \"DOMContentLoaded\". It executes when the HTML document has been loaded before css files and other objects are being loaded. This function is very useful to make changes to the document. The addEventListener method is used to listen for the DOMContentLoaded event.",
         "imagess": [
             {
-                "src": "assets/javascript.JPG",
-                "alt": "An example image 1"
+                "src": "assets/javascript.jpg",
+                "alt": "javascripts blog"
             }
         ],
         "para3": "Next I created two css files that uses css styles for the light/original mode and dark mode. The javascript sets the css styles to appropriate css file as per mode selected.",
@@ -30,16 +30,16 @@
         "date": "2024-08-05",
         "images": [
             {
-                "src": "assets/JsonFile.JPG",
-                "alt": "An example image 1"
+                "src": "assets/JsonFile.jpg",
+                "alt": "JsonFile example blog"
             }
         ],
         "para1": "Using a json file content for loading my html file involves using a JavaScript. The Javascript can fetch data, parse and manipulate the DOM, then display the content of the json file. This is commonly used for dynamically populating content of a webpage particularly for blog post and few other cases. Therefore, I used this Json File for my blog post page.",
         "para2": "The first step is creating a JSON file with appropriate contents and formatting. You have to place all your dynamically loading contents such as paragraphs, division, images, etc. in the JSON file so that the JavaScript code can load the data as it reads through the file. The content of a JavaScript file is shown below.",
         "imagess": [
             {
-                "src": "assets/javascriptCode.JPG",
-                "alt": "An example image 1"
+                "src": "assets/javascriptCode.jpg",
+                "alt": "Javascriptcode blog"
             }
         ],
         "para3": "Next steps is to create html file and call the JavaScript code where you need the data to be loaded dynamically in.",
