@@ -38,7 +38,7 @@
         "para2": "The first step is creating a JSON file with appropriate contents and formatting. You have to place all your dynamically loading contents such as paragraphs, division, images, etc. in the JSON file so that the JavaScript code can load the data as it reads through the file. The content of a JavaScript file is shown below.",
         "imagess": [
             {
-                "src": "assets/javascriptCode.jpg",
+                "src": "assets/JavascriptCode.jpg",
                 "alt": "Javascriptcode blog"
             }
         ],
