@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background: linear-gradient(to right, #47edf3, #cbfffc, #ffb8d6, #f775ab);
+   
 }
 
 .navbar {
@@ -30,8 +32,8 @@ h1 {
 
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #837070;
+    color: #d420c5;
     text-align: center;
     padding: 1px 0;
     position: fixed;
@@ -89,7 +91,7 @@ main {
 .contact form button:hover {
     background-color: #555;
 }
-*/
+
 .social-media a {
     margin: 0 10px;
     display: inline-block;
@@ -190,3 +192,16 @@ main {
     font-size: xx-large;
     font-family: cursive;
 }
+
+.theme-toggle {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  #blog-list {
+    display: flex;
+    color : black;
+  }
+
+
+
