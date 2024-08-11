@@ -28,44 +28,37 @@ function switchMode (){
         }
         const AllAs = document.querySelectorAll('a');
         for (i = 0; i < AllAs.length; ++i){
-            console.log("here")
             AllAs[i].style.color = 'white';
         }
 
         const AllDivs = document.querySelectorAll('div');
         for (i = 0; i < AllDivs.length; ++i){
-            console.log("there")
             AllDivs[i].style.color = 'white';
         }
 
         const AllH1s = document.querySelectorAll('h1');
         for (i = 0; i < AllH1s.length; ++i){
-            console.log("there")
             AllH1s[i].style.color = 'white';
         }
 
         const AllH2s = document.querySelectorAll('h2');
         for (i = 0; i < AllH2s.length; ++i){
-            console.log("there")
             AllH2s[i].style.color = 'white';
         }
 
         const AllULs = document.querySelectorAll('ul');
         for (i = 0; i < AllULs.length; ++i){
-            console.log("there")
             AllULs[i].style.color = 'white';
         }
 
         const AllButtons = document.querySelectorAll('Button');
         for (i = 0; i < AllButtons.length; ++i){
-            console.log("there")
             AllButtons[i].style.color = 'white';
             AllButtons[i].style.background = 'linear-gradient(to right,  #1b1b1b, #a3a7a6, #adacad, #1b1b1b)';
         }
 
         const AllTables = document.querySelectorAll('table');
         for (i = 0; i < AllTables.length; ++i){
-            console.log("in table")
             const cells = AllTables[i].querySelectorAll('th, td');
             AllTables[i].style.borderColor ='white';
             AllTables[i].style.color = 'white';
@@ -89,7 +82,6 @@ function switchMode (){
             }
             const AllDivs = document.querySelectorAll('div');
             for (i = 0; i < AllDivs.length; ++i){
-                console.log("there")
                 AllDivs[i].style.color = 'black';
             }
             const AllHs = document.querySelectorAll('h1');
@@ -111,7 +103,6 @@ function switchMode (){
             }
             const AllTables = document.querySelectorAll('table');
             for (i = 0; i < AllTables.length; ++i){
-                console.log("in table")
                 const cells = AllTables[i].querySelectorAll('th, td');
                 AllTables[i].style.borderColor ='black';
                 AllTables[i].style.color = 'black';
