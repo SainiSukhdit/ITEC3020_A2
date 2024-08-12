@@ -1,10 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     const blogList = document.getElementById('blog-List');
+    //using "fetch" to read items from JSON file
     fetch('data/posts.json')
         .then(response => response.json())
         .then(post => {
             post.forEach(post => {
                 // reading json file and retrieving the data to be loaded and simultaneously creating html objects.
+                
+                // creating div and h4 elements
                 var postElement = document.createElement('div');
                 var titleElement = document.createElement('h4');
                 titleElement.textContent = post.title;
@@ -33,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         postElement.appendChild(imgElement);
                     });
                 }
+                // creating paragraph elements
 
                 var paraElement = document.createElement('p');
                 paraElement.textContent = post.para1;
@@ -45,15 +49,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 paraElement = document.createElement('p');
                 postElement.appendChild(paraElement);
                 
-                // this will read the images file to be loaded.
+                // this will read the images files to be loaded.
                 post.imagess.forEach(image1 => {
+                    // creating img elements
                     const imgElement = document.createElement('img');
                     imgElement.classList.add('horizontal-list');
                     imgElement.src = image1.src;
                     imgElement.alt = image1.alt;
                     postElement.appendChild(imgElement);
                 });
-
+                
+                // creating paragraph elements
                 var paraElement = document.createElement('p');
                 paraElement.textContent = post.para3;
                 postElement.appendChild(paraElement);
